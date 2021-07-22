@@ -1,0 +1,100 @@
+<!doctype html>
+<html dir="ltr" lang="pt-BR">
+<head>
+   <meta charset="utf-8">
+   <title>Q & G Feedback</title>
+   <link rel="stylesheet" href="../css/estilo.css">
+    <script>
+   function funcao2()
+   {
+   alert("Dados enviados somente ao email do site");
+   }
+   function mensagem2()
+   {
+       alert("Bem vindos aos contatos")
+   }
+   </script>
+</head>
+<body onload="mensagem2()">
+<header id="topo">
+   <h1 class="textoVermelho center">Q & G Feedback</h1>
+</header>
+<nav id="menu">
+   <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li>------</li>
+      <li><a href="info.html">Informações</a></li>
+      <li>------</li>
+      <li><a href="eventos.html">Eventos</a></li>
+   </ul>
+</nav>
+<section>
+   <form>
+      <fieldset>
+      <legend>Envie seu feedback</legend>
+         <div>
+            
+            <label for="nome">Nome/Data de nascimento</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome aqui" autofocus required>
+
+            <td>
+               <input id="date" type="date">
+            </td>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="José323@gmail.com" required>
+
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="(DD) 99538-4682">
+
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto" required>
+               <option selected="selected">--Raça--</option>
+               <option>Nelore</option>
+               <option>Angus</option>
+               <option>Gir</option>
+               <option>Brahman</option>
+               <option>Jersey</option>
+               <option>Girolando</option>
+
+            </select>
+         </div>
+         <div>
+            <label for="msg">Feedback:</label>
+            <textarea name="msg" id="msg" cols="5" rows="5"></textarea>
+         </div>
+         <div>
+            <label for="msg">Deixe uma Opinião:</label>
+            <textarea name="msg" id="msg" cols="5" rows="5"></textarea>
+         </div>
+         <div>
+            <label for="msg">Deixe uma Opinião:</label>
+            <textarea name="msg" id="msg" cols="5" rows="5"></textarea>
+         </div>
+      <div class="sla">
+         <input type="checkbox" id="estatura" name="magro">
+         <label for="magro">Deseja receber mensagens da nossa equipe?</label>
+      </div>
+            <select name="assunto" id="assunto">
+               <option selected="selected">Envie sua avaliação sobre o site</option>
+               <option>Bom</option>
+               <option>Ruim</option>
+            </select>
+
+      </fieldset>
+      <hr>
+      <button type="submit">Send</button>
+      <button type="reset">Reset</button>
+   </form>
+</section>
+<footer id="rodape">
+   <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="info.html">Informações</a></li>
+      <li><a href="eventos.html">Eventos</a></li>
+      <p>2021. Q & G – Qualidade & Garantia - Direitos reservados</p>
+      <input type="button" onclick="funcao2()" value="Garantia" />
+   </ul>
+</footer>
+
+</body>
